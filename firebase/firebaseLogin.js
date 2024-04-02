@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 console.error("Error checking user data:", error);
             });
         } else {
-            signInWithGoogleButton.style.display = 'block';
+            signInWithGoogleButton.style.display = 'flex';
             logoutButton.style.display = 'none';
             trialElement.innerHTML = '<h2>Please login</h2>';
         }
