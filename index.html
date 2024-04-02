@@ -9,7 +9,8 @@
 <body>
     <div id="top">
         <h1 style="color: beige;">Dashboard</h1>
-        <a href="#popup1"><button style="height: 4vh; cursor: pointer;">Log in</button></a>
+        <button id="logout" style="display: none; height: 4vh; cursor: pointer;">Logout</button>
+        <a href="#popup1"><button class="signInButton signInWithGoogleButton" style="height: 4vh; cursor: pointer;">Log in</button></a>
     </div>
     <div id="middle">
         <div class="leftBox">
@@ -19,6 +20,9 @@
                 <li>Expense</li>
                 <li>Deadline Reminders</li>
             </ul>
+        </div>
+        <div class="rightBox">
+            <h2 id="username"></h2>
         </div>
     </div>
     <div id="popup">
@@ -40,4 +44,4 @@
     </div>
 </body>
 </html>
-<script type="module" src="./firebase/firebaseLogin.js"></script>
+<script type="module" src="firebase/firebaseLogin.js"></script>
