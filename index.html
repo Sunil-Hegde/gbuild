@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./elements.css">
+</head>
+<body>
+    <div id="top">
+        <h1 style="color: beige;">Dashboard</h1>
+        <a href="#popup1"><button style="height: 4vh; cursor: pointer;">Log in</button></a>
+    </div>
+    <div id="middle">
+        <div class="leftBox">
+            <ul style="list-style: none; width: 100%; padding: 0; margin: 15px 0px;">
+                <li>Marks</li>
+                <li>Attendance</li>
+                <li>Expense</li>
+                <li>Deadline Reminders</li>
+            </ul>
+        </div>
+    </div>
+    <div id="popup">
+               
+    </div>
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Log In</h2>
+            <a class="close" href="#">&times;</a>
+            <div class="content">
+                <div class="google">
+                    <button class="signInButton signInWithGoogleButton"><img src="./assets/google.png" alt="google">Sign In with Google</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="bottom">
+
+    </div>
+</body>
+</html>
+<script type="module" src="./firebase/firebaseLogin.js"></script>
