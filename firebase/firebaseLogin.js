@@ -12,6 +12,7 @@ import {
 const firebaseConfig = {
     apiKey: "AIzaSyADJQq2fz6b6VXZnAz4vjnC9td11o5m4xY",
     authDomain: "gbuild-d2700.firebaseapp.com",
+    databaseURL: "https://gbuild-d2700-default-rtdb.asia-southeast1.firebasedatabase.app",
     projectId: "gbuild-d2700",
     storageBucket: "gbuild-d2700.appspot.com",
     messagingSenderId: "536218718918",
@@ -45,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
             })
             .then(() => {
                 window.location.href = 'index.html';
+                console.log("logged in");
             })
             .catch((error) => {
                 console.error('Error during sign-in:', error.code, error.message);
