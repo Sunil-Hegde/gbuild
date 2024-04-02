@@ -5,7 +5,7 @@ import {
     update 
 } from "https://www.gstatic.com/firebasejs/10.5.1/firebase-database.js";
 import { 
-    getAuth, 
+    getAuth,  
     GoogleAuthProvider,
     signInWithPopup 
 } from "https://www.gstatic.com/firebasejs/10.5.1/firebase-auth.js";
@@ -25,9 +25,11 @@ const provider = new GoogleAuthProvider();
 document.addEventListener('DOMContentLoaded', function () {
     const signInWithGoogleButton = document.querySelector('.signInButton.signInWithGoogleButton');
     signInWithGoogleButton.addEventListener('click', (e) => {
+        console.log("Hello");
         e.preventDefault();
         signInWithPopup(auth, provider)
         .then((result) => {
+            console.log("Hello");
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
             const info = result.user;
