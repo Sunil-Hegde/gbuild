@@ -73,5 +73,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error("Error during sign-out:", error);
             alert('Error during sign-out.');
         });
+        console.log("User logged out.");
     });
 });
