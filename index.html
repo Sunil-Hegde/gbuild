@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gbuild</title>
     <link rel="stylesheet" href="./elements.css">
 </head>
 <body>
     <div id="top">
         <h1 style="color: beige;">Dashboard</h1>
-        <button id="logout" style="display: none; height: 4vh; cursor: pointer;">Logout</button>
-        <button class="signInButton signInWithGoogleButton"><img src="./assets/google.png" alt="">   Sign in with Google</button>
+        <button class="signInButton signInWithGoogleButton">Sign in</button>
     </div>
     <div id="middle">
         <div class="leftBox">
             <ul style="list-style: none; width: 100%; padding: 0; margin: 15px 0px;">
-                <li>Marks</li>
-                <li>Attendance</li>
-                <li>Expense</li>
-                <li>Deadline Reminders</li>
+                <a href=""><li>Marks</li></a>
+                <a href=""><li>Attendance</li></a>
+                <a href=""><li>Expense</li></a>
+                <a href=""><li>Deadline Reminders</li></a>
             </ul>
         </div>
         <div class="rightBox">
-            <h2 id="username"></h2>
+            <iframe src="https://calendar.google.com/calendar/embed?height=650&wkst=1&ctz=Asia%2FKolkata&bgcolor=%23ffffff&title=Varun's%20Calender&mode=WEEK&src=ZjUxYjc4YzkzMmViOWFlZWVlMGFiMGNlMDQyOWQyNDhiZjk5ZjM4ZmI3ZDFkY2NmMGU3ZmIwZTIzOGI1ZWJmMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&src=ZW4uaW5kaWFuI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23F6BF26&color=%230B8043" style="border:solid 1px #777" width="1000" height="650" frameborder="0" scrolling="no"></iframe>
         </div>
     </div>
     <div id="bottom">
@@ -30,4 +29,3 @@
     </div>
 </body>
 </html>
-<script type="module" src="firebase/firebaseLogin.js"></script>
